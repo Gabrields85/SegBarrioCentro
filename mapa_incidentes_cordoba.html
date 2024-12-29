@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3c4d83e92e8b85fc1604310ba3c7240 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3c4d83e92e8b85fc1604310ba3c7240" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3c4d83e92e8b85fc1604310ba3c7240 = L.map(
+                "map_a3c4d83e92e8b85fc1604310ba3c7240",
+                {
+                    center: [-31.4155, -64.1891],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_717ddc4bfbd7cabff066aec9ab06c771 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_717ddc4bfbd7cabff066aec9ab06c771.addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var heat_map_415531590b369746957273ad4cec3b63 = L.heatLayer(
+                [[-31.414444, -64.187969], [-31.414991, -64.189679], [-31.41454, -64.193324], [-31.413059, -64.189643], [-31.41454, -64.193324], [-31.415629, -64.188502], [-31.416095, -64.190188], [-31.415777, -64.188949], [-31.414991, -64.189679], [-31.416888, -64.189494], [-31.415777, -64.188949], [-31.415347, -64.189838], [-31.415777, -64.188949], [-31.416888, -64.189494], [-31.416888, -64.189494], [-31.41729, -64.188255], [-31.41729, -64.188255], [-31.414991, -64.189679], [-31.41729, -64.188255], [-31.415347, -64.189838], [-31.416888, -64.189494], [-31.415777, -64.188949], [-31.41729, -64.188255], [-31.41729, -64.188255], [-31.413059, -64.189643], [-31.416888, -64.189494], [-31.415347, -64.189838], [-31.413059, -64.189643], [-31.414444, -64.187969], [-31.414991, -64.189679], [-31.415777, -64.188949], [-31.413059, -64.189643], [-31.414991, -64.189679], [-31.41729, -64.188255], [-31.414991, -64.189679], [-31.415629, -64.188502], [-31.414444, -64.187969], [-31.416095, -64.190188], [-31.413059, -64.189643], [-31.415777, -64.188949], [-31.415629, -64.188502], [-31.413059, -64.189643], [-31.413059, -64.189643], [-31.416095, -64.190188], [-31.416095, -64.190188], [-31.413059, -64.189643], [-31.416095, -64.190188], [-31.416095, -64.190188], [-31.415629, -64.188502], [-31.416888, -64.189494]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_415531590b369746957273ad4cec3b63.addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var marker_6104ec1110eee3a6c25bb8e11d6a8101 = L.marker(
+                [-31.414444, -64.187969],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_79461418e90106f489300131f489d48c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6104ec1110eee3a6c25bb8e11d6a8101.setIcon(icon_79461418e90106f489300131f489d48c);
+        
+    
+        var popup_2777fd3df40286d4cb690e81b6afec97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_157ae03f51a8015948f601d0f8d14e45 = $(`<div id="html_157ae03f51a8015948f601d0f8d14e45" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>tiempo.azul3</h4>                     <b>Total incidentes:</b> 3<br>                     <b>Tipos de incidentes:</b><br>                     Sospechoso, Rotura ingreso, Mecheras                 </div>             </div>`)[0];
+                popup_2777fd3df40286d4cb690e81b6afec97.setContent(html_157ae03f51a8015948f601d0f8d14e45);
+            
+        
+
+        marker_6104ec1110eee3a6c25bb8e11d6a8101.bindPopup(popup_2777fd3df40286d4cb690e81b6afec97)
+        ;
+
+        
+    
+    
+            var marker_3d50a403a918b6df542aa8b853cc7d98 = L.marker(
+                [-31.414991, -64.189679],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_e216e5f944afb53d37030b206b639fe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d50a403a918b6df542aa8b853cc7d98.setIcon(icon_e216e5f944afb53d37030b206b639fe3);
+        
+    
+        var popup_85bab2b48440505bf3be60e91c5287c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec3afb319d7c65d56a3e70b29c5ee7e3 = $(`<div id="html_ec3afb319d7c65d56a3e70b29c5ee7e3" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>auto.monte9</h4>                     <b>Total incidentes:</b> 6<br>                     <b>Tipos de incidentes:</b><br>                     Mecheras, Robo armado, Intento de ingreso, Robo mercaderia                 </div>             </div>`)[0];
+                popup_85bab2b48440505bf3be60e91c5287c0.setContent(html_ec3afb319d7c65d56a3e70b29c5ee7e3);
+            
+        
+
+        marker_3d50a403a918b6df542aa8b853cc7d98.bindPopup(popup_85bab2b48440505bf3be60e91c5287c0)
+        ;
+
+        
+    
+    
+            var marker_984499ecee880d2f25cf7b68a9671079 = L.marker(
+                [-31.41454, -64.193324],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_20d9fd31421ae0ab232311ac39177d6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_984499ecee880d2f25cf7b68a9671079.setIcon(icon_20d9fd31421ae0ab232311ac39177d6b);
+        
+    
+        var popup_cfee6ce1e7a4ca7c69dac0222ad0360f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3bb442bcdd5c9e4839364f2c6db92da = $(`<div id="html_b3bb442bcdd5c9e4839364f2c6db92da" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>color.piedra7</h4>                     <b>Total incidentes:</b> 2<br>                     <b>Tipos de incidentes:</b><br>                     Robo armado, Prueban candado                 </div>             </div>`)[0];
+                popup_cfee6ce1e7a4ca7c69dac0222ad0360f.setContent(html_b3bb442bcdd5c9e4839364f2c6db92da);
+            
+        
+
+        marker_984499ecee880d2f25cf7b68a9671079.bindPopup(popup_cfee6ce1e7a4ca7c69dac0222ad0360f)
+        ;
+
+        
+    
+    
+            var marker_d50c2f22a671c3cf2c2fa56dced757a6 = L.marker(
+                [-31.413059, -64.189643],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_41b9f0024eb7e0ac5c40612b80c82d91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d50c2f22a671c3cf2c2fa56dced757a6.setIcon(icon_41b9f0024eb7e0ac5c40612b80c82d91);
+        
+    
+        var popup_3ee55ef2727f67072fea8dfd863428d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_468e03d5c0985cdc7544365e33f3f445 = $(`<div id="html_468e03d5c0985cdc7544365e33f3f445" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>blanco.sal88</h4>                     <b>Total incidentes:</b> 8<br>                     <b>Tipos de incidentes:</b><br>                     Mecheras, Intento de robo, Sospechoso, Intento de ingreso, Venta de robado, Robo mercaderia, Prueban candado                 </div>             </div>`)[0];
+                popup_3ee55ef2727f67072fea8dfd863428d1.setContent(html_468e03d5c0985cdc7544365e33f3f445);
+            
+        
+
+        marker_d50c2f22a671c3cf2c2fa56dced757a6.bindPopup(popup_3ee55ef2727f67072fea8dfd863428d1)
+        ;
+
+        
+    
+    
+            var marker_28364c9e551ebf1e02e3a94e5c142b06 = L.marker(
+                [-31.415629, -64.188502],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_f29388bef8c3398c6c3426d16828d13e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_28364c9e551ebf1e02e3a94e5c142b06.setIcon(icon_f29388bef8c3398c6c3426d16828d13e);
+        
+    
+        var popup_d81bd5bc2e70b9453346ec765c0757e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ed7128fd65ac63ce02e0afc56936428 = $(`<div id="html_1ed7128fd65ac63ce02e0afc56936428" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>paloma.salud2</h4>                     <b>Total incidentes:</b> 4<br>                     <b>Tipos de incidentes:</b><br>                     Intento de robo, Falso prestador, Rotura ingreso                 </div>             </div>`)[0];
+                popup_d81bd5bc2e70b9453346ec765c0757e8.setContent(html_1ed7128fd65ac63ce02e0afc56936428);
+            
+        
+
+        marker_28364c9e551ebf1e02e3a94e5c142b06.bindPopup(popup_d81bd5bc2e70b9453346ec765c0757e8)
+        ;
+
+        
+    
+    
+            var marker_66186b40ab645ef2fd621598bcd15c1a = L.marker(
+                [-31.416095, -64.190188],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_e2d1d982626dcc3a3cd6b9f060abd0a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_66186b40ab645ef2fd621598bcd15c1a.setIcon(icon_e2d1d982626dcc3a3cd6b9f060abd0a1);
+        
+    
+        var popup_d30cc99e8afa0d10d85efbd41b268099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09d75c02ba459f1eea8980ce44cc61a5 = $(`<div id="html_09d75c02ba459f1eea8980ce44cc61a5" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>castillo.buen3</h4>                     <b>Total incidentes:</b> 6<br>                     <b>Tipos de incidentes:</b><br>                     Intento de robo, Rotura ingreso, Falso prestador, Robo armado, Prueban candado                 </div>             </div>`)[0];
+                popup_d30cc99e8afa0d10d85efbd41b268099.setContent(html_09d75c02ba459f1eea8980ce44cc61a5);
+            
+        
+
+        marker_66186b40ab645ef2fd621598bcd15c1a.bindPopup(popup_d30cc99e8afa0d10d85efbd41b268099)
+        ;
+
+        
+    
+    
+            var marker_fefc50d3bd542c558ffa9569db9d1f26 = L.marker(
+                [-31.415777, -64.188949],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_f76d91c4ddc7f68f6cca5958ffc819d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fefc50d3bd542c558ffa9569db9d1f26.setIcon(icon_f76d91c4ddc7f68f6cca5958ffc819d3);
+        
+    
+        var popup_0fbb191d0cec0feb19ef265fc78e02dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_816e37acfc218946db32ddccc67e6338 = $(`<div id="html_816e37acfc218946db32ddccc67e6338" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>aro.basto90</h4>                     <b>Total incidentes:</b> 6<br>                     <b>Tipos de incidentes:</b><br>                     Intento de robo, Intento de ingreso, Venta de robado, Robo armado, Prueban candado                 </div>             </div>`)[0];
+                popup_0fbb191d0cec0feb19ef265fc78e02dc.setContent(html_816e37acfc218946db32ddccc67e6338);
+            
+        
+
+        marker_fefc50d3bd542c558ffa9569db9d1f26.bindPopup(popup_0fbb191d0cec0feb19ef265fc78e02dc)
+        ;
+
+        
+    
+    
+            var marker_a1109b025d6e54b606336c8ef8452897 = L.marker(
+                [-31.416888, -64.189494],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_1a8523fd555ed94e4da84352a46d9d86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a1109b025d6e54b606336c8ef8452897.setIcon(icon_1a8523fd555ed94e4da84352a46d9d86);
+        
+    
+        var popup_631feef09325370c9ebd90ac2933afc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1f395038d0030ea68c7b8a43ac51689 = $(`<div id="html_a1f395038d0030ea68c7b8a43ac51689" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>tierra.junto4</h4>                     <b>Total incidentes:</b> 6<br>                     <b>Tipos de incidentes:</b><br>                     Sospechoso, Robo armado, Rotura ingreso, Robo mercaderia                 </div>             </div>`)[0];
+                popup_631feef09325370c9ebd90ac2933afc3.setContent(html_a1f395038d0030ea68c7b8a43ac51689);
+            
+        
+
+        marker_a1109b025d6e54b606336c8ef8452897.bindPopup(popup_631feef09325370c9ebd90ac2933afc3)
+        ;
+
+        
+    
+    
+            var marker_b3e1d4c1e66d9325c277faaa47c76658 = L.marker(
+                [-31.415347, -64.189838],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_6fe74e8cdeed48b91d29eb6c55d5c369 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b3e1d4c1e66d9325c277faaa47c76658.setIcon(icon_6fe74e8cdeed48b91d29eb6c55d5c369);
+        
+    
+        var popup_74c4a27b39e72b6704db87952e4b0742 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1a0c82fb00689704280ae4e42e43d4b = $(`<div id="html_d1a0c82fb00689704280ae4e42e43d4b" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Casa.oso5</h4>                     <b>Total incidentes:</b> 3<br>                     <b>Tipos de incidentes:</b><br>                     Mecheras, Robo mercaderia                 </div>             </div>`)[0];
+                popup_74c4a27b39e72b6704db87952e4b0742.setContent(html_d1a0c82fb00689704280ae4e42e43d4b);
+            
+        
+
+        marker_b3e1d4c1e66d9325c277faaa47c76658.bindPopup(popup_74c4a27b39e72b6704db87952e4b0742)
+        ;
+
+        
+    
+    
+            var marker_80f07c41d15c6562b151d9488adc4131 = L.marker(
+                [-31.41729, -64.188255],
+                {
+}
+            ).addTo(map_a3c4d83e92e8b85fc1604310ba3c7240);
+        
+    
+            var icon_3731b66bc907f769f5f19210e9be8cb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_80f07c41d15c6562b151d9488adc4131.setIcon(icon_3731b66bc907f769f5f19210e9be8cb2);
+        
+    
+        var popup_6e17fd96c19f7538a6fec3e2153b4b8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acc06d7ed1d35f61088119c506ee46a6 = $(`<div id="html_acc06d7ed1d35f61088119c506ee46a6" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>hilo.sur1</h4>                     <b>Total incidentes:</b> 6<br>                     <b>Tipos de incidentes:</b><br>                     Mecheras, Intento de robo, Sospechoso, Rotura ingreso, Robo armado                 </div>             </div>`)[0];
+                popup_6e17fd96c19f7538a6fec3e2153b4b8e.setContent(html_acc06d7ed1d35f61088119c506ee46a6);
+            
+        
+
+        marker_80f07c41d15c6562b151d9488adc4131.bindPopup(popup_6e17fd96c19f7538a6fec3e2153b4b8e)
+        ;
+
+        
+    
+</script>
+</html>
